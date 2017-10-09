@@ -18,6 +18,7 @@ Share buttons are enabled with a single javascript tag. It is possible to pass s
 - **data-class**: Custom CSS classes to be added.
 - **data-icons**: Override SVG icons file.
 - **data-style**: Override CSS file.
+- **data-home**: Override URL used for tracking shares.
 
 ```html
 <script src="/road/to/nowhere/kifisome.js" data-target="#my-some-buttons"></script>
