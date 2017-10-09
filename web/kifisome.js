@@ -107,9 +107,9 @@
     config.basedir = script.src.substr(0, script.src.lastIndexOf("/"));
     config.root = script.src.substr(0, script.src.indexOf("://") + 3) + script.src.split("/")[2];
 
-    config.icons = to_absolute_url(config.icons, config);
-    config.style = to_absolute_url(config.style, config);
-    config.home = to_absolute_url(config.home, config);
+    config.icons = script.dataset.icons || to_absolute_url(config.icons, config);
+    config.style = script.dataset.style || to_absolute_url(config.style, config);
+    config.home = script.dataset.home || to_absolute_url(config.home, config);
   }
 
   // Enable only on modern enough browsers.
