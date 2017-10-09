@@ -1,0 +1,13 @@
+kifisome.share:
+  path: '/kifisome/share'
+  defaults:
+    _controller: 'Drupal\kifisome\Controller\ShareController::share'
+  requirements:
+    _permission: 'access content'
+kifisome.admin:
+  path: '/admin/config/services/kifisome'
+  defaults:
+    _controller: 'Drupal\kifisome\Controller\ShareController::admin'
+    _title: 'Social media shares'
+  requirements:
+    _permission: 'manage kifisome'

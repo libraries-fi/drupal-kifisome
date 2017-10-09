@@ -1,0 +1,44 @@
+<?php
+
+function kifisome_schema() {
+  $schema['kifisome_shares'] = [
+    'desription' => 'Log of social media shares.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'url' => [
+        'description' => 'Complete URL of content that was shared.',
+        'type' => 'varchar',
+        'length' => 1024,
+        'not null' => TRUE,
+      ],
+      'domain' => [
+        'description' => 'Domain name of shared content.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'service' => [
+        'description' => 'Keyword for service that the content was shared to.',
+        'type' => 'varchar',
+        'length' => 30,
+        'not null' => TRUE,
+      ],
+      'timestamp' => [
+        'description' => 'Unix timestamp of when event occurred.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ]
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'domain' => ['domain'],
+    ]
+  ];
+
+  return $schema;
+}

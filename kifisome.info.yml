@@ -1,0 +1,7 @@
+name: Social Media Sharing
+type: module
+core: 8.x
+package: Kirjastot.fi
+description: Track content shared to social media
+configure: kifisome.admin
+dependencies: {}

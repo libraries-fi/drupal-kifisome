@@ -1,0 +1,60 @@
+$kifisome-sm: 576px;
+$kifisome-lg: 992px;
+$kifisome-xl: 1200px;
+
+.kifisome.inline {
+  a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+
+  a:not(:first-child) {
+    margin-left: .5rem;
+  }
+}
+
+.kifisome.sidebar {
+  z-index: 999;
+}
+
+@media(max-width: $kifisome-sm) {
+  $size: 40px;
+
+  .kifisome.sidebar {
+    height: $size;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    a {
+      width: $size;
+      height: $size;
+    }
+  }
+}
+
+@media(min-width: $kifisome-sm) {
+  .kifisome.sidebar {
+    position: fixed;
+    left: 0;
+    top: 300px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+  }
+}
+
+@media(min-width: $kifisome-lg) {
+  .kifisome.sidebar {
+    a {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

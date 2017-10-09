@@ -1,0 +1,53 @@
+/* line 6, ../scss/demo.scss */
+.kifisome.inline a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+/* line 12, ../scss/demo.scss */
+.kifisome.inline a:not(:first-child) {
+  margin-left: .5rem;
+}
+
+/* line 17, ../scss/demo.scss */
+.kifisome.sidebar {
+  z-index: 999;
+}
+
+@media (max-width: 576px) {
+  /* line 24, ../scss/demo.scss */
+  .kifisome.sidebar {
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  /* line 32, ../scss/demo.scss */
+  .kifisome.sidebar a {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 40, ../scss/demo.scss */
+  .kifisome.sidebar {
+    position: fixed;
+    left: 0;
+    top: 300px;
+  }
+  /* line 45, ../scss/demo.scss */
+  .kifisome.sidebar a {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 55, ../scss/demo.scss */
+  .kifisome.sidebar a {
+    width: 60px;
+    height: 60px;
+  }
+}

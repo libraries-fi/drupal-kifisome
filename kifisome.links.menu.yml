@@ -1,0 +1,5 @@
+kifisome.configure:
+  title: 'Social Media Shares'
+  route_name: kifisome.admin
+  description: 'View statistics about content shared on social media.'
+  parent: system.admin_config_services

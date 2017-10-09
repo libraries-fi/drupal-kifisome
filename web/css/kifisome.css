@@ -1,0 +1,25 @@
+/* line 2, ../scss/kifisome.scss */
+.kifisome a {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  background-color: white;
+}
+/* line 11, ../scss/kifisome.scss */
+.kifisome svg {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0;
+  transition: border-radius 0.2s;
+}
+/* line 18, ../scss/kifisome.scss */
+.kifisome svg:hover {
+  opacity: .7;
+}
+/* line 22, ../scss/kifisome.scss */
+.kifisome svg:active {
+  border-radius: 30%;
+}
