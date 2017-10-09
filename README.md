@@ -15,6 +15,7 @@ The web server will need to be configured to pass the Access-Control-Allow-Origi
 Share buttons are enabled with a single javascript tag. It is possible to pass some configuration to the script by adding data variables to the script tag.
 
 - **data-target**: Define an existing element to use as the container.
+- **data-id**: Define an ID for the wrapping element.
 - **data-class**: Custom CSS classes to be added.
 - **data-icons**: Override SVG icons file.
 - **data-style**: Override CSS file.
