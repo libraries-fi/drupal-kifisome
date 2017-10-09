@@ -1,5 +1,5 @@
 # Kifi Some
-Track what content visitors share to social media. The module embeds simple share buttons on pages similar to AddThis and other services, except that the users won't be spied on.
+Track what content visitors share to social media. The module embeds simple share buttons on pages similar to AddThis and other services, except that the users won't be spied on. This module is made for Drupal 8.
 
 ## Features
 - No middleman – users are not tracked until they share something.
