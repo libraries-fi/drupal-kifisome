@@ -21,6 +21,7 @@ Share buttons are enabled with a single javascript tag. It is possible to pass s
 - **data-icons**: Override SVG icons file.
 - **data-style**: Override CSS file.
 - **data-home**: Override URL used for tracking shares.
+- **date-title**: Display text before the buttons.
 
 ```html
 <script src="/road/to/nowhere/kifisome.js" data-target="#my-some-buttons"></script>

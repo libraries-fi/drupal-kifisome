@@ -148,13 +148,21 @@
         some.className += script.dataset.class;
       }
 
+      var target = document.body;
+
       if (script.dataset.target) {
         var target_id = script.dataset.target.substring(1);
-        document.getElementById(target_id).appendChild(some);
-      } else {
-        document.body.appendChild(some);
+        target = document.getElementById(target_id).appendChild(some);
       }
+
+      if (script.dataset.title) {
+        var title = document.createElement("span");
+        title.className = "kifisome-title";
+        title.innerText = script.dataset.title;
+        some.insertBefore(title, some.firstChild);
+      }
+
+      target.appendChild(some);
     });
   }
-
 }());
