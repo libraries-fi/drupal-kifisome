@@ -157,7 +157,6 @@
 
       if (script.dataset.title) {
         var title = document.createElement("span");
-        title.className = "kifisome-title";
         title.innerText = script.dataset.title;
         some.insertBefore(title, some.firstChild);
       }
