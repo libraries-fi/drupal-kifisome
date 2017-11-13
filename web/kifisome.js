@@ -131,7 +131,7 @@
       config.buttons.forEach(function(sid) {
         var button = document.createElement("a");
         button.role = "button";
-        button.className = "kifisome " + sid;
+        button.className = "ks-icon " + sid;
         button.dataset.id = sid;
         button.addEventListener("click", on_share);
 
@@ -157,6 +157,7 @@
 
       if (script.dataset.title) {
         var title = document.createElement("span");
+        title.className = "ks-title";
         title.innerText = script.dataset.title;
         some.insertBefore(title, some.firstChild);
       }
