@@ -152,7 +152,7 @@
 
       if (script.dataset.target) {
         var target_id = script.dataset.target.substring(1);
-        target = document.getElementById(target_id).appendChild(some);
+        target = document.getElementById(target_id);
       }
 
       if (script.dataset.title) {
