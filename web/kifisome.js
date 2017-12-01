@@ -57,8 +57,10 @@
     var shared_page = window.location;
     var service = event.currentTarget.dataset.id;
 
-    call_home(service, shared_page);
-    popup_share(service, shared_page);
+    setTimeout(function() {
+      call_home(service, shared_page);
+      popup_share(service, shared_page);
+    }, 5000);
   }
 
   function call_home(service_id, shared_url) {
