@@ -58,10 +58,6 @@
     var service = event.currentTarget.dataset.id;
 
     popup_share(service, shared_page);
-
-    setTimeout(function() {
-      call_home(service, shared_page);
-    }, 5000);
   }
 
   function call_home(service_id, shared_url) {
@@ -81,6 +77,12 @@
     var target_url = config.services[service_id].replace("{mypage}", shared_page);
     var features = "center=1,width=650,height=400,toolbar=0";
     var popup = window.open(target_url, "kifisome_share", features);
+
+    setTimeout(function() {
+      if (!popup.closed) {
+        call_home(service_id, shared_page);
+      }
+    }, 5000);
   }
 
   function to_absolute_url(path, config) {
