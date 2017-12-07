@@ -57,9 +57,10 @@
     var shared_page = window.location;
     var service = event.currentTarget.dataset.id;
 
+    popup_share(service, shared_page);
+
     setTimeout(function() {
       call_home(service, shared_page);
-      popup_share(service, shared_page);
     }, 5000);
   }
 
@@ -78,7 +79,6 @@
 
   function popup_share(service_id, shared_page) {
     var target_url = config.services[service_id].replace("{mypage}", shared_page);
-
     var features = "center=1,width=650,height=400,toolbar=0";
     var popup = window.open(target_url, "kifisome_share", features);
   }
