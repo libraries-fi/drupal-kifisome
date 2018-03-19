@@ -1,0 +1,6 @@
+{
+  "name": "libraries-fi/kifisome",
+  "description": "Buttons for sharing pages to social media with simple statistics.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+"
+}
